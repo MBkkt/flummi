@@ -1,7 +1,7 @@
 {
   FORK next = §SELECT p FROM points AS p§;
   GATHER min = §arg_min({next}, {next}.x)§,
-         max = §arg_min({next}, {next}.x)§;
+         max = §arg_max({next}, {next}.x)§;
 
   EMIT min;
   EMIT max;
